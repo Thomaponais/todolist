@@ -4,12 +4,12 @@ import 'firebase/firestore'
 
 // firebase init - add your own config here
 const firebaseConfig = {
-  apiKey: ENV['API_KEY'],
-  authDomain: ENV['AUTH_DOMAIN'],
-  projectId: ENV['PROJECT_ID'],
-  storageBucket: ENV['STORAGE_BUCKET'],
-  messagingSenderId: ENV['MESSAGE_SENDER_ID'],
-  appId: ENV['APP_ID'],
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGE_SENDER_ID,
+  appId: process.env.APP_ID,
 }
 
 firebase.initializeApp(firebaseConfig)
