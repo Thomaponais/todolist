@@ -4,12 +4,12 @@ import 'firebase/firestore'
 
 // firebase init - add your own config here
 const firebaseConfig = {
-  apiKey: "AIzaSyAQKwCa3DHb46L4VSvARHXnwpydp680dmU",
-  authDomain: "todo-c2a00.firebaseapp.com",
-  projectId: "todo-c2a00",
-  storageBucket: "todo-c2a00.appspot.com",
-  messagingSenderId: "977375759718",
-  appId: "1:977375759718:web:b8c81e7e50c64f5e2dcca7"
+  apiKey: ENV['API_KEY'],
+  authDomain: ENV['AUTH_DOMAIN'],
+  projectId: ENV['PROJECT_ID'],
+  storageBucket: ENV['STORAGE_BUCKET'],
+  messagingSenderId: ENV['MESSAGE_SENDER_ID'],
+  appId: ENV['APP_ID'],
 }
 
 firebase.initializeApp(firebaseConfig)
